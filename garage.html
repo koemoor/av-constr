@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>ООО "АВ КОНСТРУКЦИЯ"</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/fullpage.config.js"></script>
+</head>
+
+<body>
+    <div class="topper">
+        <div class="logotype">
+        </div>
+        <ul class="menu">
+            <li data-menuanchor="main" class="active"><a href="index.html#main">Главная</a></li>
+            <li data-menuanchor="ready"><a href="index.html#ready">Готовые</a></li>
+            <li data-menuanchor="price"><a href="index.html#price">Прайс</a></li>
+            <li data-menuanchor="about"><a href="index.html#about">О нас</a></li>
+            <li data-menuanchor="projects"><a href="index.html#projects-title">Проекты</a></li>
+            <li data-menuanchor="clients"><a href="index.html#clients">Клиенты</a></li>
+            <li data-menuanchor="contacts"><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section">
+            <div class="slide sec-gar-1">
+                <div class="wrapper">
+                    <h2>Гаражи блюхера</h2>
+                    <div class="title-line"></div>
+                    <span>
+                      Многоэтажный гараж площадью 14 010 кв м по ул Блюхера располагается в существующей жилой застройки. Автостоянка запроектирована из пяти этажей на 270 машиномест, на первом этаже располагается автомойка на два поста и торговое помещение площадью 1 190 кв м. Площадь участка 4 643 кв м. Оценочная стоимость проекта: 43 585 943 руб.
+                    </span>
+                </div>
+            </div>
+            <div class="slide sec-gar-2">
+                <div class="wrapper">
+                </div>
+            </div>
+            <div class="slide sec-gar-3">
+                <div class="wrapper">
+                </div>
+            </div>
+            <div class="slide sec-gar-4">
+                <div class="wrapper">
+                </div>
+            </div>
+            <div class="slide sec-gar-5">
+                <div class="wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+         $(document).ready ( function(){
+           elements = document.getElementsByClassName("play");
+           for(var i=0; i < elements.length; i++){
+               elements[i].style.display = "none";
+           }
+           $("#play").css({"display": "none"});
+            slideTimeout = setInterval(function () {
+                $.fn.fullpage.moveSlideRight();
+            }, 4000);
+        });
+
+        function PlayTimeOut() {
+            elementsPlay = document.getElementsByClassName("play");
+            for(var i=0; i < elementsPlay.length; i++){
+                elementsPlay[i].style.display = "none";
+            }
+            elementsStop = document.getElementsByClassName("stop");
+            for(var i=0; i <elementsStop.length; i++){
+                elementsStop[i].style.display = "inline-block";
+            }
+            $.fn.fullpage.moveSlideRight();
+            slideTimeout = setInterval(function() {
+                $.fn.fullpage.moveSlideRight();
+            }, 4000);
+        }
+
+        function StopTimeOut() {
+            elementsPlay = document.getElementsByClassName("play");
+            for(var i=0; i <elementsPlay.length; i++){
+                elementsPlay[i].style.display = "inline-block";
+            }
+            elementsStop = document.getElementsByClassName("stop");
+            for(var i=0; i <elementsStop.length; i++){
+                elementsStop[i].style.display = "none";
+            }
+            clearInterval(slideTimeout);
+        }
+
+    </script>
+
+</body>
+
+</html>

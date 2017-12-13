@@ -1,0 +1,395 @@
+*{
+    text-decoration: none;
+}
+body{
+    font: 18px Roboto;
+    font-weight: 300;
+    color: #fefefe;
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+.wrapper{
+    width:1000px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.wrapper h2, .sec-about h2, .sec-price h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.sec-ready h2, .sec-projects h2{
+    font-size:72px;
+}
+.title-line{
+    width:250px;
+	height:2px;
+	margin: 0 auto;
+	background: #edcd1f;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.anim-arrow{
+}
+.topper{
+    top: 0;
+    left:0;
+    height: 37px;
+    width:100%;
+    position: fixed;
+    z-index: 70;
+    margin-top:20px;
+}
+.autoplay-button{
+    font-size:14px;
+    background: rgba(0,0,0,0);
+    color: #fff;
+    display: inline-block;
+    bottom: 6px;
+    position: absolute;
+}
+.autoplay-button:hover{
+    color:#fefefe;
+    cursor: pointer;
+}
+.topper .logotype{
+    margin-left:60px;
+    width:220px;
+    height:37px;
+    float:left;
+    background:url(../img/logo.png);
+}
+.topper ul.menu {
+    overflow:hidden;
+    display: block;
+    float:right;
+    margin-top: 2px;
+    margin-right: 60px;
+}
+.topper ul.menu li{
+    float:left;
+    list-style: none;
+    margin-left: 20px;
+    border-bottom: 4px solid transparent;
+    padding-top: 6px;
+    color: #fefefe;
+}
+.topper ul.menu li:first-child{
+    margin-left: 0;
+}
+.topper ul.menu li:hover{
+    border-color: #edcd1f;
+    cursor: pointer;
+}
+.topper ul.menu li a{
+    color: #fff;
+}
+.sec-main{
+    text-align: center;
+    color:#fff;
+}
+.sec-main h2{
+    font-weight: 500;
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+.sec-main span{
+    font-size: 24px;
+}
+.sec-main-1{
+    background-image: url('../img/header-bg/header1.png');
+    background-size: cover;
+    background-position: center 80%;
+}
+.sec-main-2{
+    background-image: url('../img/header-bg/header2.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+.sec-main-3{
+    background-image: url('../img/header-bg/header3.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+.sec-main-4{
+    background-image: url('../img/header-bg/header4.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+.sec-main-5{
+    background-image: url('../img/header-bg/header6.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+.sec-ready{
+    background: #68C3A3;
+    text-align: center;
+}
+.sc1-1{background: url(../img/ready/bulatova/slide1.png); background-size:cover;}
+.sc1-2{background: url(../img/ready/bulatova/slide2.png); background-size:cover;}
+.sc1-3{background: url(../img/ready/bulatova/slide3.png); background-size:cover;}
+.sc1-4{background: url(../img/ready/bulatova/slide4.png); background-size:cover;}
+.sc1-5{background: url(../img/ready/bulatova/slide5.png); background-size:cover;}
+.sc1-6{background: url(../img/ready/bulatova/slide6.png); background-size:cover;}
+.sc1-7{background: url(../img/ready/bulatova/slide7.png); background-size:cover;}
+.sc1-8{background: url(../img/ready/bulatova/slide8.png); background-size:cover;}
+.sc1-9{background: url(../img/ready/bulatova/slide9.png); background-size:cover;}
+
+.sc2-1{background: url(../img/ready/kochevnik/slide1.PNG); background-size:cover;}
+.sc2-2{background: url(../img/ready/kochevnik/slide2.PNG); background-size:cover;}
+.sc2-3{background: url(../img/ready/kochevnik/slide3.PNG); background-size:cover;}
+.sc2-4{background: url(../img/ready/kochevnik/slide4.PNG); background-size:cover;}
+.sc2-5{background: url(../img/ready/kochevnik/slide5.PNG); background-size:cover;}
+.sc2-6{background: url(../img/ready/kochevnik/slide6.PNG); background-size:cover;}
+.sc2-7{background: url(../img/ready/kochevnik/slide7.PNG); background-size:cover;}
+
+
+.sec-price{
+    background: #336E7B;
+    text-align: center;
+    vertical-align: none;
+    padding-top: 67px;
+}
+.products{
+    margin-top: 30px;
+    height:600px;
+}
+.product{
+    float:left;
+    margin-left:36px;
+    margin-top:25px;
+}
+.product a{
+    color: #fff;
+}
+.product, .product img{
+    height:160px;
+    width:250px;
+}
+.product p.text{
+    width:230px;
+    height:260px;
+    background: rgba(0,0,0,.4);
+    margin:0;
+    padding:10px;
+    font-size: 13px;
+}
+.product p.text img{
+    padding-top:20px;
+    height:50px;
+    width:50px;
+}
+.product .text-click:hover{
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.product b{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.product span.lenina_but{
+    padding: 10px 20px;
+    background: #F39C12;
+}
+.product span.lenina_but img{
+  display:none;
+}
+.product span.lenina_but:hover img{
+    position:fixed;
+    top:0;
+    width:600px;
+    height:700px;
+    display:inline-block;
+}
+.product span.lenina_but:hover{
+  cursor:pointer;
+}
+.sec-about{
+    background: url(../img/about-bg.jpg);
+    background-size: cover;
+    padding-top:57px;
+}
+.sec-about p.text{
+    text-align: center;
+}
+.counts {
+	text-align: center;
+    background: #F39C12;
+    padding: 20px 0 20px 0;
+}
+
+.counts .box {
+	display: inline-block;
+	padding: 0 10px;
+}
+.counts .box:last-child {
+	border-right: none;
+}
+.counts .box span.number {
+	display: block;
+	font-size: 40px;
+}
+.counts .box span.title {
+	display: block;
+	font-weight: 300;
+	font-size: 18px;
+}
+.sec-contacts{
+    color:#000;
+    width:100%;
+    padding-top:57px;
+}
+.contacts{
+    width:100%;
+}
+.sec-achievments{
+    width:100%;
+    height:70px;
+    background: #F39C12;
+    padding: 20px 0 20px 0;
+    text-align: center
+}
+.sec-achievments .achievment{
+    display: inline-block;
+    padding: 0 30px;
+    border-right: solid 1px #fefefe;
+}
+.sec-achievments .achievment:last-child{
+    border-right: none;
+}
+.sec-achievments .achievment span.number{
+    display: block;
+    font-size: 24px;
+}
+.sec-achievments .achievment span.title{
+    display: block;
+    font-size: 18px;
+}
+.sec-projects{
+    background: #34495E;
+    text-align: center;
+}
+.sec-project{
+    background: #000;
+    text-align: center;
+}
+.sec-project .button{
+    font: Roboto;
+    width:200px;
+    height:40px;
+    background: #F39C12;
+    border: none;
+    color:#fff;
+    font-weight: 300;
+    border-radius: 4px;
+    font-size: 18px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.1s ease-out 0s ;
+
+}
+.sec-project .button-static{
+    font: Roboto;
+    width:200px;
+    height:40px;
+    background: #F39C12;
+    border: none;
+    color:#fff;
+    font-weight: 300;
+    border-radius: 4px;
+    font-size: 18px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.1s ease-out 0s ;
+}
+.sec-project .button-static:hover{
+    background: #E87E04;
+}
+.sec-project .button p.{
+    display: block;
+}
+.sec-project .button p.scb-info{
+    display: none;
+}
+.sec-project h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin:0;
+}
+.sec-project .button:hover{
+    overflow:hidden;
+    background: #E87E04;
+    cursor:pointer;
+    width:800px;
+    height:160px;
+    line-height: normal;
+    font-size:18px;
+    flow-into: none;
+    padding:10px;
+    text-align: justify;
+}
+.sec-project .big:hover{
+    height:250px;
+}
+.sec-project .button:hover p.scb-more{
+    display: none;
+}
+.sec-project .button:hover p.scb-info{
+    display: block;
+}
+.pr-1{background:url(../img/projects/multipleks.jpg); background-size: cover;}
+.pr-2{background:url(../img/projects/ordjonikidze.jpg); background-size: cover;}
+.pr-3{background:url(../img/projects/bulatova64.jpg); background-size: cover;}
+.pr-4{background:url(../img/projects/ten_kort_2.jpg); background-size: cover;}
+.pr-5{background:url(../img/projects/kr_put.jpg); background-size: cover;}
+.pr-6{background:url(../img/projects/sibzavod2.jpg); background-size: cover;}
+.pr-7{background:url(../img/projects/garage.jpg); background-size: cover;}
+.sec-clients{
+    background: #EEEEEE;
+    text-align: center;
+    color:#000;
+}
+.sec-stargorod{
+    background:#34495E;
+    width:100%;
+    text-align: center;
+}
+.table{
+    width:100%;
+}
+.row{
+    margin-top:5px;
+    width:100%;
+}
+.main .col{
+    background-color: rgba(0,0,0,.2);
+    font-size: 17px;
+}
+.col{
+    line-height: 25px;
+    display: inline-block;
+    height:25px;
+    padding: 5px;
+    font-size:14px;
+}
+
+.sm-1{background: url(../img/projects/multipleks.jpg); background-size:cover;}
+.sm-2{background: url(../img/projects/multipleks2.jpg); background-size:cover;}
+.sm-3{background: url(../img/projects/multipleks3.jpg); background-size:cover;}
+.ssp-1{background: url(../img/projects/ordjonikidze.jpg); background-size:cover;}
+.sec-kort-1{background: url(../img/projects/ten_kort_2.jpg); background-size:cover;}
+.sec-kort-2{background: url(../img/projects/kort1.jpg); background-size:cover;}
+.sec-kort-3{background: url(../img/projects/kort2.jpg); background-size:cover;}
+.sec-gar-1{background: url(../img/projects/garage.jpg); background-size:cover;}
+.sec-gar-2{background: url(../img/projects/gar1.jpg); background-size:cover;}
+.sec-gar-3{background: url(../img/projects/gar2.jpg); background-size:cover;}
+.sec-gar-4{background: url(../img/projects/gar3.jpg); background-size:cover;}
+.sec-gar-5{background: url(../img/projects/gar4.jpg); background-size:cover;}
