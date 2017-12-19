@@ -194,8 +194,6 @@ body{
 }
 
 .product span.lenina_but{
-    padding: 10px 20px;
-    background: #F39C12;
 }
 .product span.lenina_but img{
   display:none;
@@ -234,6 +232,13 @@ body{
 .counts .box span.number {
 	display: block;
 	font-size: 40px;
+}
+.counts .box a {
+  color: #fff;
+}
+.counts .box span.number:hover{
+  color: #E9D460;
+  cursor: pointer;
 }
 .counts .box span.title {
 	display: block;
